@@ -8,7 +8,7 @@ import rx.subjects.ReplaySubject;
 
 import java.util.concurrent.TimeUnit;
 
-
+// Subject extends Observable and implements Observer
 public class SubjectL {
     public static void main(String[] args) throws InterruptedException {
         publishSubject();
@@ -17,7 +17,6 @@ public class SubjectL {
         asyncSubject();
     }
 
-    //PublishSubject implements Observable and Observer
     private static void publishSubject() {
         System.out.println('\n' + "::publishSubject::");
         PublishSubject<Integer> publishSubject = PublishSubject.create();
