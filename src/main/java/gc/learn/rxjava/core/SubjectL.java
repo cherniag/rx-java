@@ -24,7 +24,7 @@ public class SubjectL {
         publishSubject.subscribe(System.out::println,    // onNext
                 e -> System.out.println("error:: " + e), // onError
                 () -> System.out.println("complete")     // onComplete
-        );   // onComplete
+        );
         publishSubject.onNext(2);
         publishSubject.onNext(3);
         publishSubject.onCompleted(); // complete
@@ -39,7 +39,7 @@ public class SubjectL {
        /* replaySubject.subscribe(System.out::println,    // onNext
                 e -> System.out.println("error:: " + e), // onError
                 () -> System.out.println("complete")     // onComplete
-        );   // onComplete*/
+        );  */
         replaySubject.subscribe(System.out::println);    // just only onNext
         replaySubject.onNext(2);
         replaySubject.onNext(3);
