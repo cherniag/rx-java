@@ -31,7 +31,6 @@ public class SubjectL {
         publishSubject.onNext(4);     // will not be printed
     }
 
-    //PublishSubject implements Observable and Observer
     private static void replaySubject() throws InterruptedException {
         System.out.println('\n' + "::replaySubject::");
         ReplaySubject<Integer> replaySubject = ReplaySubject.create();
